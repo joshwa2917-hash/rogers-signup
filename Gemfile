@@ -59,4 +59,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "msgpack", "~> 1.7.2"
+gem "msgpack", "~> 1.8.0"
