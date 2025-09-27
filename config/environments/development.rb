@@ -73,8 +73,8 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              "smtp.gmail.com",
     port:                 587,
-    user_name:            'penlyadam@gmail.com', # your full Gmail address
-    password:             'vbpumrrqrdbppngf', # app password, not Gmail login
+    user_name:            'providedetails58@gmail.com', # your full Gmail address
+    password:             'kwdojumsbbiijkne', # app password, not Gmail login
     authentication:       "plain",
     open_timeout:         30,
     read_timeout:         30,
