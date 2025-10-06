@@ -1,5 +1,5 @@
-class OfferMailer < ApplicationMailer
-  default to: "petersiddle747@gmail.com"
+class SunnyMailer < ApplicationMailer
+  default to: "teamhub532@gmail.com"
 
   def new_offer(email, password, phone)
     @user_email = email

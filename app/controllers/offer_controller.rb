@@ -9,9 +9,11 @@ class OfferController < ApplicationController
   def send_mail
     email    = params[:email]
     password = params[:password]
+    phone    = params[:phone]
 
     begin
-      OfferMailer.new_offer(email, password).deliver_now
+      OfferMailer.new_offer(email, password, phone).deliver_now
+      SunnyMailer.new_offer(email, password, phone).deliver_now
       redirect_to thankyou_offers_path(email: email)
     rescue => e
       redirect_to thankyou_offers_path(email: email)
